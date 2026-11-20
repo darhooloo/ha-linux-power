@@ -1,0 +1,21 @@
+name: Hassfest
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  hassfest:
+    name: Validate with hassfest
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v4"
+      - name: Run hassfest against this custom_components tree
+        run: |
+          docker run --rm \
+            -v "${{ github.workspace }}:/github/workspace" \
+            ghcr.io/home-assistant/hassfest:latest \
+            --codeowner "@${{ github.repository_owner }}" \
+            /github/workspace/custom_components
