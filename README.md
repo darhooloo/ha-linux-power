@@ -3,7 +3,7 @@
 Power on and off Linux machines on your LAN from Home Assistant:
 **Wake-on-LAN** to boot, **SSH** to shut down, **ping polling** for live state.
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=darhooloo&repository=ha-linux-power&category=integration)
 ![hassfest](https://github.com/darhooloo/ha-linux-power/workflows/Hassfest/badge.svg)
 ![hacs](https://github.com/darhooloo/ha-linux-power/workflows/HACS/badge.svg)
 
