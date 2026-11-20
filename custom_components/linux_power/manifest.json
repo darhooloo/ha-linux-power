@@ -1,0 +1,13 @@
+{
+  "domain": "linux_power",
+  "name": "Linux Power Control",
+  "codeowners": ["@darhooloo"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/darhooloo/ha-linux-power",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/darhooloo/ha-linux-power/issues",
+  "requirements": ["asyncssh"],
+  "version": "1.0.0"
+}
