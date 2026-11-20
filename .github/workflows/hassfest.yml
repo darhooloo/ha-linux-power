@@ -12,9 +12,4 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - uses: "actions/checkout@v4"
-      - name: Run hassfest against this custom integration
-        run: |
-          docker run --rm \
-            -v "${{ github.workspace }}:/workspace" \
-            ghcr.io/home-assistant/hassfest:latest \
-            --integration-path /workspace/custom_components/linux_power
+      - uses: "home-assistant/actions/hassfest@master"
